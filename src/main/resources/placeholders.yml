@@ -1,0 +1,27 @@
+# Customify
+# Create your own placeholders and use them as %customify_<id>%
+#
+# Ids may contain letters, digits, '_', '-' and '.' and are not case-sensitive.
+#
+# Text:    id: "text"
+# Lines:   id:
+#            - "first line"
+#            - "second line"        (lines are joined with a line break)
+#
+# Colors:  use & codes, for example &b or &l. Write && for a literal &.
+# Nesting: other placeholders may be used inside values, for example %player_name%.
+#
+# Commands: /customify reload, /customify list, /customify set <id> <value>,
+#           /customify remove <id>
+#
+# Edit this file and run /customify reload, or manage placeholders with the commands.
+
+placeholders:
+  donate: "www.site.com"
+  discord: "&bdiscord.gg/example"
+  welcome: "&fWelcome to the server, &b%player_name%&f!"
+  store: "&b%customify_donate%/store"
+  rules:
+    - "&bRule 1&f: Be kind to others"
+    - "&bRule 2&f: No cheating"
+    - "&bRule 3&f: Have fun"
